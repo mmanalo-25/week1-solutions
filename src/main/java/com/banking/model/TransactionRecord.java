@@ -55,5 +55,5 @@ public class TransactionRecord {
     public String toString() {
         return getFormattedTimestamp() + " | " + transactionType + " | Amount: " + amount + " | Balance: " + balance + " | Status: " + status ;
     }
-
+jjj
 }
