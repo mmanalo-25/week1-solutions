@@ -1,0 +1,5 @@
+[2025-02-14 05:03:15] INITIAL DEPOSIT | Amount: 400 | Balance: 400 | Status: SUCCESS
+[2025-02-14 05:03:34] DEPOSIT | Amount: 500 | Balance: 900 | Status: SUCCESS
+[2025-02-14 05:04:57] WITHDRAWAL | Amount: 100 | Balance: 800 | Status: SUCCESS
+[2025-02-14 05:07:42] MONTHLY FEE | Amount: 12 | Balance: 788 | Status: SUCCESS
+[2025-02-14 05:10:04] TRANSFER | Amount: 100 | Balance: 688 | Status: SUCCESS
