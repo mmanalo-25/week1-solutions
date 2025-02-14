@@ -1,6 +1,7 @@
 package com.banking.app;
 
 import com.banking.exception.AccountNotFoundException;
+import com.banking.exception.InsufficientFundsException;
 import com.banking.exception.InvalidDepositException;
 import com.banking.model.*;
 import com.banking.service.AccountService;
@@ -50,6 +51,7 @@ public class Main {
 
             default:
                 System.out.println("Invalid Selection. Choose between 1-2 only.");
+                mainDashboard();
                 break;
 
         }
@@ -167,7 +169,8 @@ public class Main {
                         amount = TransactionUtil.isValidBigDecimal(input.nextLine());
                         transactionService.withdraw(account.getAccountNumber(), amount);
 
-                    } catch (InvalidDepositException | InputMismatchException | NumberFormatException e) {
+                    } catch (InvalidDepositException | InputMismatchException | NumberFormatException |
+                             InsufficientFundsException e) {
                         System.out.println("Error: " + e.getMessage());
                         System.out.println("Returning to Transaction Dashboard...");
                     }
@@ -177,10 +180,21 @@ public class Main {
                     System.out.println("FROM : " + account.getAccountNumber());
                     System.out.println("BALANCE: " + account.getBalance());
                     System.out.println("TO: ");
-                    Account accountReceiver;
+                    Account accountReceiver = null;
                     do {
-                        System.out.print("Enter Account Number: ");
-                        accountReceiver = accountService.getAccount(input.nextLine());
+                        try{
+                            System.out.print("Enter Account Number: ");
+                            String fromAccount = input.nextLine();
+                            if(account.getAccountNumber().equals(fromAccount) ){
+                                System.out.println("Transfer failed. Cannot transfer on the same account.");
+                            }else {
+                                accountReceiver = accountService.getAccount(fromAccount);
+                            }
+                        }      catch (AccountNotFoundException e) {
+                    System.out.println("ERROR: " + e.getMessage());
+                }
+
+
                     } while (accountReceiver == null);
                     System.out.print("Enter amount: ");
                     try {

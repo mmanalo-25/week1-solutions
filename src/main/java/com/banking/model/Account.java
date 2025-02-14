@@ -17,11 +17,6 @@ public abstract class Account {
 
     }
 
-
-    public AccountType getAccountType() {
-        return this.accountType;
-    }
-
     public String getAccountNumber() {
         return this.accountNumber;
     }

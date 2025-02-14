@@ -3,3 +3,31 @@
 [2025-02-14 05:10:04] TRANSFER | Amount: 100 | Balance: 300 | Status: SUCCESS
 [2025-02-14 05:15:51] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
 [2025-02-14 05:16:05] DEPOSIT | Amount: 500 | Balance: 1000 | Status: SUCCESS
+[2025-02-14 11:16:00] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:16:49] DEPOSIT | Amount: 500 | Balance: 1000 | Status: SUCCESS
+[2025-02-14 11:17:14] TRANSFER | Amount: 500 | Balance: 1500 | Status: SUCCESS
+[2025-02-14 11:17:14] TRANSFER | Amount: 500 | Balance: 1500 | Status: SUCCESS
+[2025-02-14 11:21:20] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:21:53] TRANSFER | Amount: 100 | Balance: 400 | Status: SUCCESS
+[2025-02-14 11:25:11] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:25:38] TRANSFER | Amount: 500 | Balance: 0 | Status: SUCCESS
+[2025-02-14 11:35:51] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:36:48] DEPOSIT | Amount: 200 | Balance: 700 | Status: SUCCESS
+[2025-02-14 11:41:10] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:42:11] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:42:33] TRANSFER | Amount: 1000 | Balance: -500 | Status: SUCCESS
+[2025-02-14 12:05:30] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 12:06:20] DEPOSIT | Amount: 500 | Balance: 1000 | Status: SUCCESS
+[2025-02-14 12:06:32] WITHDRAWAL | Amount: 100 | Balance: 900 | Status: SUCCESS
+[2025-02-14 12:06:56] TRANSFER | Amount: 400 | Balance: 500 | Status: SUCCESS
+[2025-02-14 12:07:16] MONTHLY FEE | Amount: 15.00 | Balance: 515.00 | Status: SUCCESS
+[2025-02-14 12:08:07] DEPOSIT | Amount: 1 | Balance: 516.00 | Status: SUCCESS
+[2025-02-14 12:11:56] INITIAL DEPOSIT | Amount: 200 | Balance: 200 | Status: SUCCESS
+[2025-02-14 12:12:41] DEPOSIT | Amount: 200 | Balance: 400 | Status: SUCCESS
+[2025-02-14 12:12:52] WITHDRAWAL | Amount: 100 | Balance: 300 | Status: SUCCESS
+[2025-02-14 12:13:10] TRANSFER | Amount: 100 | Balance: 200 | Status: SUCCESS
+[2025-02-14 12:13:17] MONTHLY FEE | Amount: 6.00 | Balance: 206.00 | Status: SUCCESS
+[2025-02-14 12:13:52] DEPOSIT | Amount: 2000 | Balance: 2206.00 | Status: SUCCESS
+[2025-02-14 12:14:48] WITHDRAWAL | Amount: 2100 | Balance: 2206.00 | Status: FAILED
+[2025-02-14 12:15:24] TRANSFER | Amount: 100 | Balance: 2106.00 | Status: SUCCESS
+[2025-02-14 12:15:41] WITHDRAWAL | Amount: 100 | Balance: 2006.00 | Status: SUCCESS

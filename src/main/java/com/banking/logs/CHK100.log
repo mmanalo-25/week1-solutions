@@ -1,2 +1,14 @@
 [2025-02-13 23:31:58] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
 [2025-02-13 23:34:58] WITHDRAWAL | Amount: 500 | Balance: 0 | Status: SUCCESS
+[2025-02-14 11:21:24] INITIAL DEPOSIT | Amount: 50 | Balance: 50 | Status: SUCCESS
+[2025-02-14 11:21:53] TRANSFER | Amount: 100 | Balance: 150 | Status: SUCCESS
+[2025-02-14 11:25:19] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:25:38] TRANSFER | Amount: 500 | Balance: 1000 | Status: SUCCESS
+[2025-02-14 11:36:05] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:42:15] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 11:42:33] TRANSFER | Amount: 1000 | Balance: 1500 | Status: SUCCESS
+[2025-02-14 12:05:44] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 12:06:56] TRANSFER | Amount: 400 | Balance: 900 | Status: SUCCESS
+[2025-02-14 12:12:10] INITIAL DEPOSIT | Amount: 500 | Balance: 500 | Status: SUCCESS
+[2025-02-14 12:13:10] TRANSFER | Amount: 100 | Balance: 600 | Status: SUCCESS
+[2025-02-14 12:15:24] TRANSFER | Amount: 100 | Balance: 700 | Status: SUCCESS

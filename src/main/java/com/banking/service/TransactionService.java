@@ -1,11 +1,10 @@
 package com.banking.service;
 
-import com.banking.exception.AccountNotFoundException;
+
 import com.banking.exception.InvalidDepositException;
 import com.banking.model.Account;
 import com.banking.model.Transaction;
 import com.banking.model.TransactionRecord;
-import com.banking.util.TransactionUtil;
 
 import java.math.BigDecimal;
 
@@ -17,7 +16,6 @@ public class TransactionService {
     private final AccountService accountService;
     static private final List<TransactionRecord> transactionHistory = new ArrayList<>();
     TransactionRecord transactionRecord;
-
 
     public TransactionService(AccountService accountService) {
         this.accountService = accountService;
@@ -63,6 +61,7 @@ public class TransactionService {
         if (amount.compareTo(BigDecimal.ZERO) <= 0) {
             throw new InvalidDepositException();
         }
+
         try {
 
             if (account instanceof Transaction) {
@@ -77,7 +76,7 @@ public class TransactionService {
                     System.out.println("Withdrawal successful!");
 
                 } else {
-                    accountService.updateAccount(account.getAccountNumber(), account);
+
                     transactionRecord = new TransactionRecord(account.getAccountNumber(), "WITHDRAWAL", amount, account.getBalance(), "FAILED");
                     transactionHistory.add(transactionRecord);
                     TransactionLogger.logTransaction(transactionRecord);
@@ -109,7 +108,7 @@ public class TransactionService {
         transactionHistory.add(transactionRecord);
         TransactionLogger.logTransaction(transactionRecord);
 
-        System.out.println(amount + " is successfully transfered to Account number: " + toAccount);
+        System.out.println(amount + " is successfully transfered to Account number: " + toAccount.getAccountNumber());
 
     }
     public static int countTransactionsByDate(String accountNumber) {
